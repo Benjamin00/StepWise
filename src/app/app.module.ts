@@ -8,6 +8,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from '../environments/environment';
 import { LoginComponent } from './login/login.component';
 import { LandingComponent } from './landing/landing.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   imports: [
@@ -17,7 +18,7 @@ import { LandingComponent } from './landing/landing.component';
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features,
     AngularFireStorageModule // imports firebase/storage only needed for storage features
   ],
-  declarations: [ AppComponent, LoginComponent, LandingComponent ],
+  declarations: [ AppComponent, LoginComponent, LandingComponent, UserComponent ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {}
