@@ -9,6 +9,7 @@ import { environment } from '../environments/environment';
 import { LoginComponent } from './login/login.component';
 import { LandingComponent } from './landing/landing.component';
 import { UserComponent } from './user/user.component';
+import { ListComponent } from './list/list.component';
 
 @NgModule({
   imports: [
@@ -18,7 +19,7 @@ import { UserComponent } from './user/user.component';
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features,
     AngularFireStorageModule // imports firebase/storage only needed for storage features
   ],
-  declarations: [ AppComponent, LoginComponent, LandingComponent, UserComponent ],
+  declarations: [ AppComponent, LoginComponent, LandingComponent, UserComponent, ListComponent ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {}
