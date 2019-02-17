@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
+import {MatCardModule} from '@angular/material/card';
 
 @Component({
   selector: 'app-grid',

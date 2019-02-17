@@ -56,3 +56,6 @@ h1 {
 .fas {
     margin-right: 1%;
 }
+mat-grid-tile {
+    background: lightblue;
+  }
