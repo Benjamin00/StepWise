@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFirestore } from '@angular/fire/firestore';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-grid',
@@ -7,7 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GridComponent implements OnInit {
 
-  constructor() { }
+  items: Observable<any[]>;
+  names: Observable<any[]>;
+  constructor(db: AngularFirestore) {
+    this.items = db.collection('test').valueChanges();
+    this.names = db.collection('IssueNames').valueChanges();
+  }
 
   ngOnInit() {
   }
