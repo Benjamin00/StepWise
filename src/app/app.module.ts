@@ -12,6 +12,8 @@ import { UserComponent } from './user/user.component';
 import { ListComponent } from './list/list.component';
 import { RouterModule, Routes } from '@angular/router';
 import { GridComponent } from './grid/grid.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 
 const appRoutes: Routes = [
   { path: '', component: GridComponent },
@@ -27,10 +29,12 @@ const appRoutes: Routes = [
   imports: [
     RouterModule.forRoot(appRoutes),
     BrowserModule,
+    BrowserAnimationsModule,
     AngularFireModule.initializeApp(environment.firebase, 'stepwise-60ca4'), // imports firebase/app needed for everything
     AngularFirestoreModule, // imports firebase/firestore, only needed for database features
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features,
-    AngularFireStorageModule // imports firebase/storage only needed for storage features
+    AngularFireStorageModule, // imports firebase/storage only needed for storage features
+    MatButtonModule, MatCheckboxModule
   ],
   declarations: [ AppComponent, LoginComponent, LandingComponent, UserComponent, ListComponent, GridComponent ],
   bootstrap: [ AppComponent ]
