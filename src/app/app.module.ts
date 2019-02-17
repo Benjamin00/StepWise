@@ -50,11 +50,15 @@ import {
   MatTreeModule,
 } from '@angular/material';
 import {MatCardModule} from '@angular/material/card';
+import { ImpactComponent } from './impact/impact.component';
 
 const appRoutes: Routes = [
-  { path: '', component: GridComponent },
+  { path: '', component: LandingComponent },
   { path: 'usercomponent', component: UserComponent },
   { path: 'listcomponent', component: ListComponent },
+  { path: 'landingcomponent', component: LandingComponent },
+  { path: 'gridcomponent', component: GridComponent },
+  { path: 'impactcomponent', component: ImpactComponent },
   {
     path: 'user',
     component: UserComponent,
@@ -106,7 +110,7 @@ const appRoutes: Routes = [
     MatTooltipModule,
     MatTreeModule,
   ],
-  declarations: [ AppComponent, LoginComponent, LandingComponent, UserComponent, ListComponent, GridComponent ],
+  declarations: [ AppComponent, LoginComponent, LandingComponent, UserComponent, ListComponent, GridComponent, ImpactComponent ],
   bootstrap: [ AppComponent ],
   schemas: [ NO_ERRORS_SCHEMA ]
 })

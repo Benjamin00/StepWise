@@ -13,6 +13,8 @@
   </head>
   <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <!--Logo-->
+                <img src="../../assets/tree.png" id="logo">
                 <a class="navbar-brand" href="#"><h2>STEPWISE</h2></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -37,27 +39,68 @@
                   <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign Out</button>
                 </div>
     </nav>
+    <ul>
+        <li class="text" *ngFor="let item of items | async">
+          {{item.name}}
+        
+    <div class = "container">
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://images.unsplash.com/photo-1523737000522-87c15d8efcc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80/100px180/" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">No Poverty</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Let's Go!</a>
+        </div>
+      </div>
     
-    <div class="row">
+      <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="https://images.unsplash.com/photo-1531928351158-2f736078e0a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3900&q=80/100px180/" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Zero Hunger</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Let's Go!</a>
+          </div>
+        </div>
 
-        <img src="https://www.undp.org/content/dam/undp/sdg/tiles/sdg-en-01.png">
-        <img src="https://www.undp.org/content/dam/undp/sdg/tiles/sdg-en-02.png">
-        <img src="https://www.undp.org/content/dam/undp/sdg/tiles/sdg-en-03.png">
-        <img src="https://www.undp.org/content/dam/undp/sdg/tiles/sdg-en-04.png">
-        <img src="https://www.undp.org/content/dam/undp/sdg/tiles/sdg-en-05.png">
-        <img src="https://www.undp.org/content/dam/undp/sdg/tiles/sdg-en-06.png">
-        <img src="https://www.undp.org/content/dam/undp/sdg/tiles/sdg-en-07.png">
-        <img src="https://www.undp.org/content/dam/undp/sdg/tiles/sdg-en-08.png">
-        <img src="https://www.undp.org/content/dam/undp/sdg/tiles/sdg-en-09.png">
-        <img src="https://www.undp.org/content/dam/undp/sdg/tiles/sdg-en-10.png">
-        <img src="https://www.undp.org/content/dam/undp/sdg/tiles/sdg-en-11.png">
-        <img src="https://www.undp.org/content/dam/undp/sdg/tiles/sdg-en-12.png">
-        <img src="https://www.undp.org/content/dam/undp/sdg/tiles/sdg-en-13.png">
-        <img src="https://www.undp.org/content/dam/undp/sdg/tiles/sdg-en-14.png">
-        <img src="https://www.undp.org/content/dam/undp/sdg/tiles/sdg-en-15.png">
-        <img src="https://www.undp.org/content/dam/undp/sdg/tiles/sdg-en-16.png">
+      <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="https://images.unsplash.com/photo-1543164904-8ff92670a192?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3900&q=80/100px180/" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Good Health and Well-Being</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Let's Go!</a>
+          </div>
+        </div>
 
-    </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://images.unsplash.com/photo-1484415063229-3d6335668531?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2176&q=80/100px180/" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Quality Education</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Let's Go!</a>
+            </div>
+          </div>
+        
+          <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="https://images.unsplash.com/photo-1516569422572-d9e0514b9598?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3456&q=80/100px180/" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Climate Action</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Let's Go!</a>
+              </div>
+            </div>
+    
+          <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="https://images.unsplash.com/photo-1511898634545-c01af8a54dd5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3820&q=80/100px180/" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Gender Equality</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Let's Go!</a>
+              </div>
+          </div>
+          </div>
+        </li>
+      </ul>
+
     <!-- Optional JavaScript
     jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

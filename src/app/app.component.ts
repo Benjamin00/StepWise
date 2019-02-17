@@ -10,8 +10,13 @@ import { Observable } from 'rxjs';
 export class AppComponent {
   items: Observable<any[]>;
   names: Observable<any[]>;
+  userdata: Observable<any[]>;
+  issueblurbs: Observable<any[]>;
   constructor(db: AngularFirestore) {
     this.items = db.collection('test').valueChanges();
     this.names = db.collection('IssueNames').valueChanges();
+    this.userdata = db.collection('Users').valueChanges();
+    this.userdata = db.collection('Users').valueChanges();
+    this.issueblurbs = db.collection('')
   }
 }
