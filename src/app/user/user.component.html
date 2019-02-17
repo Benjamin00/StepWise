@@ -13,33 +13,24 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
 <body class="w3-theme-l5">
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <!--Logo-->
-    <img src="../../assets/tree.png" id="logo">
-    <a class="navbar-brand" href="#"><h2>STEPWISE</h2></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" routerLink ="/landing" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" routerLink ="/grid" href="#">Causes</a>
-        </li>
-        <li class="nav-item">
-                <a class="nav-link" routerLink ="/impact" href="#">Impact</a>
-        </li>
-        <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
-        </li>
-      </ul>
-      <i class="fas fa-user-circle fa-3x" routerLink ="/user"></i>
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" >Sign Out</button>
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-child w3-margin-right"></i>StepWise</a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Network"><i class="fa fa-globe"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-user"></i></a>
+  <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">2</span></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+      <a href="#" class="w3-bar-item w3-button">One new netwroking request</a>
+      <a href="#" class="w3-bar-item w3-button">A new challange is added</a>
     </div>
-</nav>
+  </div>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
+    <img src="/w3images/avatar2.png" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
+  </a>
+ </div>
+</div>
 
 <!-- Navbar on small screens -->
 <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
@@ -50,7 +41,7 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
 </div>
 
 <!-- Page Container -->
-<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">    
+<div class="w3-container w3-content" style="max-width:1400px; margin-top:80px">    
   <!-- The Grid -->
   <div class="w3-row">
     <!-- Left Column -->
@@ -61,9 +52,9 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
          <h4 class="w3-center">My Profile</h4>
          <p class="w3-center"><img src="/w3images/avatar3.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
          <hr>
-         <p><i class="fa fa-edit fa-fw w3-margin-right w3-text-theme"></i> Your goal</p>
-         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Your location</p>
-         <p><i class="fa fa-trophy fa-fw w3-margin-right w3-text-theme"></i> Your progress(points)</p>
+         <p><i class="fa fa-edit fa-fw w3-margin-right w3-text-theme"></i> Climate Change</p>
+         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Palo, Alto</p>
+         <p><i class="fa fa-trophy fa-fw w3-margin-right w3-text-theme"></i> Your progress</p>
         </div>
       </div>
       <br>
@@ -113,96 +104,47 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
           <p>Interests</p>
           <p>
             <span class="w3-tag w3-small w3-theme-d5">News</span>
-            <span class="w3-tag w3-small w3-theme-d4">W3Schools</span>
-            <span class="w3-tag w3-small w3-theme-d3">Labels</span>
-            <span class="w3-tag w3-small w3-theme-d2">Games</span>
-            <span class="w3-tag w3-small w3-theme-d1">Friends</span>
-            <span class="w3-tag w3-small w3-theme">Games</span>
-            <span class="w3-tag w3-small w3-theme-l1">Friends</span>
+            <span class="w3-tag w3-small w3-theme-d3">Climate</span>
+            <span class="w3-tag w3-small w3-theme-d2">Globalization</span>
+            <span class="w3-tag w3-small w3-theme-l1">Enviroment</span>
             <span class="w3-tag w3-small w3-theme-l2">Food</span>
-            <span class="w3-tag w3-small w3-theme-l3">Design</span>
+            <span class="w3-tag w3-small w3-theme-l3">Animals</span>
             <span class="w3-tag w3-small w3-theme-l4">Art</span>
             <span class="w3-tag w3-small w3-theme-l5">Photos</span>
           </p>
         </div>
       </div>
-      <br>
     <!-- End Left Column -->
     </div>
 
+<!-- Middle Column -->
+    <div class="w3-col m1">
+    
+      <div class="w3-row-padding">
+            <div class="w3-container w3-padding">
+              
+    <!-- End Middle Column -->
+    </div> </div>  </div> 
+
 
     <!-- Right Column -->
-    <div class="w3-col m5">
+    <div class="w3-col m4">
       <div class="w3-card w3-round w3-white w3-center">
-        <div class="w3-container">
+        <div class="w3-container w3-content"> 
           <p>Upcoming Challenges:</p>
           <img src="/w3images/forest.jpg" alt="Forest" style="width:100%;">
-          <p><strong>Run</strong></p>
+          <p><strong>Break fo a Run</strong></p>
           <p>Friday 15:00</p>
           <p><button class="w3-button w3-block w3-theme-l4">Info</button></p>
         </div>
-      </div>
-      <br>
-      
-      <div class="w3-card w3-round w3-white w3-center">
-        <div class="w3-container">
-          <p>Network Request</p>
-          <img src="/w3images/avatar6.png" alt="Avatar" style="width:50%"><br>
-          <span>Jane Doe</span>
-          <div class="w3-row w3-opacity">
-            <div class="w3-half">
-              <button class="w3-button w3-block w3-green w3-section" title="Accept"><i class="fa fa-check"></i></button>
-            </div>
-            <div class="w3-half">
-              <button class="w3-button w3-block w3-red w3-section" title="Decline"><i class="fa fa-remove"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
+      </div> 
       <br>
     <!-- End Right Column -->
     </div>
-    
   <!-- End Grid -->
   </div>
-  
+  <br>
 <!-- End Page Container -->
 </div>
-<br>
-
-<!-- Footer -->
-<footer class="w3-container w3-theme-d3 w3-padding-16">
-  <h5>StepWise</h5>
-</footer>
-
-<footer class="w3-container w3-theme-d5">
-  
-</footer>
- 
-<script>
-// Accordion
-function myFunction(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-    x.previousElementSibling.className += " w3-theme-d1";
-  } else { 
-    x.className = x.className.replace("w3-show", "");
-    x.previousElementSibling.className = 
-    x.previousElementSibling.className.replace(" w3-theme-d1", "");
-  }
-}
-
-// Used to toggle the menu on smaller screens when clicking on the menu button
-function openNav() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
-
 </body>
 </html> 
