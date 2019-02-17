@@ -12,11 +12,11 @@ export class AppComponent {
   names: Observable<any[]>;
   userdata: Observable<any[]>;
   issueblurbs: Observable<any[]>;
+
   constructor(db: AngularFirestore) {
     this.items = db.collection('test').valueChanges();
     this.names = db.collection('IssueNames').valueChanges();
     this.userdata = db.collection('Users').valueChanges();
-    this.userdata = db.collection('Users').valueChanges();
-    this.issueblurbs = db.collection('')
+    this.issueblurbs = db.collection('IssueBlurbs').valueChanges();
   }
 }
