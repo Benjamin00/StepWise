@@ -1,0 +1,370 @@
+.square {
+    width: 30%;
+    height: 30%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5% 0;
+    background-color: #535152;
+    margin: 1.4%;
+    float: left;
+    border-radius: 25px;
+    transition: background 0.6s;
+    --webkit-transition: background 0.6s;
+    --moz-transition: background 0.6s;
+    border: 1px #00E174 dashed;
+  }
+  .card {
+  display: inline-flex;
+  margin: 20px;
+  }
+ /* Customize the label (the container) */
+ .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  } 
+  body {
+    background-color: #ffff;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #00E174;
+  }
+  .move-left {
+    width: auto;
+    box-shadow: none;
+  }
+  mat-expansion-panel-header{
+    margin:auto;
+  }
+  p {
+  color: black;
+  text-align: left;
+  }
+  .square:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #00E174;
+    border: 1px white dashed;
+  }
+  h2 {
+    color: white;
+    font-weight: 100;
+    margin: 0;
+    background-color: #00E174;
+    padding: 0.2em;
+    font-size: 2vw;
+    letter-spacing: 5px;
+    font-weight: bold;
+  }
+  h1 {
+    font-size: 2.5vw;
+    letter-spacing: 2px;
+  }
+  .container {
+    max-width: 85%;
+    margin-top: 2%;
+  }
+  .navbar {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .btn-outline-success {
+    color: #00E174;
+    border-color: #00E174;
+  }
+  .fas {
+    margin-right: 1%;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 16px;
+    margin: auto;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 16px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  #logo {
+    height: 30px;
+    padding-right: 5px;
+  }
+  .btn-primary {
+  background-color: #00E174;
+  border-color: #00E174;
+  }
+  .btn-primary:hover {
+  background-color: rgb(18, 161, 92);
+  border-color: rgb(18, 161, 92);
+  }
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame {
+visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+  background: #9D50BB;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F98855, #FF420E);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F98855,#FF420E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.modal {
+    background: #4A148C;
+    color: #fff;
+    padding: 20px 15px;
+    border-radius: 10px;
+    width: 250px;
+    height: 210px;
+    box-shadow: 8px 12px 8px 2px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    
+    &.show {
+        -webkit-animation: show-modal 1s 1s both;
+        animation: show-modal 1s 1s both;   
+        opacity: 1;
+    }
+    
+    &.hide {
+        -webkit-animation: hide-modal 1s ease-in-out both;
+        animation: hide-modal 1s ease-in-out both;
+    }
+    
+    .caution {
+        position: absolute;
+        top: 5px;
+        left: 40px;
+        width: 48px;
+        height: 48px;
+        fill: #89DA59;
+    }
+    
+    .err-title {
+        display: block;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: bold;
+        margin: 15px 0;
+    }
+    
+    p {
+        line-height: 1.25rem;
+        margin: 0;
+        padding: 0px 25px 0px 25px;
+    }
+    
+    #button {
+        font-family: inherit; 
+    font-size: 100%; 
+        font-weight: bold;
+        letter-spacing: 1px;
+    line-height: 2.5; 
+    margin: 0;
+        display: inline-block;
+        position: relative;
+        width: 280px;
+        top: 20px;
+        border: none;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    text-decoration: none;
+    background: #89DA59;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+        text-transform: uppercase;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    }
+    
+    #button:hover {
+            background: #512DA8;
+    }
+    #button:focus {
+            outline: none;
+            outline-offset: -2px;
+    }
+    #button:active {
+            transform: scale(0.99);
+    }
+}
+@-webkit-keyframes show-modal {
+  0% {
+    -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0;
+  }
+  70% {
+    -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        opacity: 1;
+  }
+  90% {
+    -webkit-transform: scale(0.95);
+        transform: scale(0.95);
+        opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+  }
+}
+@keyframes show-modal {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+        opacity: 0;
+  }
+  70% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+        opacity: 1;
+  }
+  90% {
+    -webkit-transform: scale(0.95);
+        transform: scale(0.95);
+        opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+  }
+}
+@-webkit-keyframes hide-modal {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  20% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+@keyframes hide-modal {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  20% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}

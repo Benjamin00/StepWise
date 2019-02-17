@@ -1,33 +1,38 @@
-<html>
+<!doctype html>
+<html lang="en">
+    <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <!--Logo-->
-                <img src="../../assets/tree.png" id="logo">
-                <a class="navbar-brand" href="#"><h2>STEPWISE</h2></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" routerLink ="/landingcomponent" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" routerLink ="/gridcomponent" href="#">Causes</a>
-                    </li>
-                    <li class="nav-item">
-                            <a class="nav-link" routerLink ="/impactcomponent" href="#">Impact</a>
-                    </li>
-                    <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Us</a>
-                    </li>
-                  </ul>
-                  <i class="fas fa-user-circle fa-3x" routerLink ="/usercomponent"></i>
-                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit" >Sign Out</button>
-                </div>
-            </nav>
-            
+            <!--Logo-->
+            <img src="../../assets/tree.png" id="logo">
+            <a class="navbar-brand" href="#"><h2>STEPWISE</h2></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" routerLink ="/landing" href="#">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink ="/grid" href="#">Causes</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" routerLink ="/list" href="#">Actions</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" routerLink ="/impact" href="#">Impact</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                </ul>
+                <i class="fas fa-user-circle fa-3x" routerLink ="/user"></i>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" >Sign Out</button>
+            </div>
+        </nav>
+    </body>
+<!--     
 <mat-accordion>
     <mat-expansion-panel (opened)="panelOpenState = true"
     (closed)="panelOpenState = false">
@@ -70,6 +75,6 @@ Level 3: The Wastewater Warrior
       <input type="checkbox" name="task1" value="sponsor"> Featured Sponsorship Task: Attend a recyling event!<br>
 </p>
 </mat-expansion-panel>
-</mat-accordion>
+</mat-accordion> -->
 
 </html>
