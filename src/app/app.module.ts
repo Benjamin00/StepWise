@@ -10,16 +10,30 @@ import { LoginComponent } from './login/login.component';
 import { LandingComponent } from './landing/landing.component';
 import { UserComponent } from './user/user.component';
 import { ListComponent } from './list/list.component';
+import { RouterModule, Routes } from '@angular/router';
+import { GridComponent } from './grid/grid.component';
+
+const appRoutes: Routes = [
+  { path: '', component: GridComponent },
+  { path: 'usercomponent', component: UserComponent },
+  { path: 'listcomponent', component: ListComponent },
+  {
+    path: 'user',
+    component: UserComponent,
+    data: { title: 'UserComponent' }
+  }]
 
 @NgModule({
   imports: [
+    RouterModule.forRoot(appRoutes),
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase, 'stepwise-60ca4'), // imports firebase/app needed for everything
     AngularFirestoreModule, // imports firebase/firestore, only needed for database features
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features,
     AngularFireStorageModule // imports firebase/storage only needed for storage features
   ],
-  declarations: [ AppComponent, LoginComponent, LandingComponent, UserComponent, ListComponent ],
+  declarations: [ AppComponent, LoginComponent, LandingComponent, UserComponent, ListComponent, GridComponent ],
   bootstrap: [ AppComponent ]
 })
-export class AppModule {}
+export class AppModule { }
+// <!-- Routed components go here -->
