@@ -42,11 +42,13 @@
       </nav>
 
       <h1>Challenges</h1>
+      <div *ngIf="items">
       <ul>
-          <li class="text" *ngFor="let item of items? | async">
+          <li class="text" *ngFor="let item of items | async">
             {{item.name}}
           </li>
         </ul>
+      </div>
     <div class = "container">
       <mat-accordion>
           <mat-expansion-panel>

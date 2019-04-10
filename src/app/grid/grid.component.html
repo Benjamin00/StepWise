@@ -40,10 +40,11 @@
           </div>
       </nav>
       
-
-    <h1 class="text" *ngFor="let issues of issueblurbs? | async">
-      {{issues.Hunger}}
-    </h1>
+    <div *ngIf="issueblurbs">
+      <h1 class="text" *ngFor="let issues of issueblurbs | async">
+        {{issues.Hunger}}
+      </h1>
+    </div>
 
     <ul>
     <div class = "container">
