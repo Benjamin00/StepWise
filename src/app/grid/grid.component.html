@@ -41,7 +41,7 @@
       </nav>
       
 
-    <h1 class="text" *ngFor="let issues of issueblurbs | async">
+    <h1 class="text" *ngFor="let issues of issueblurbs? | async">
       {{issues.Hunger}}
     </h1>
 

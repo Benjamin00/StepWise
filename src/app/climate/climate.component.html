@@ -43,15 +43,13 @@
 
       <h1>Challenges</h1>
       <ul>
-          <li class="text" *ngFor="let item of items | async">
+          <li class="text" *ngFor="let item of items? | async">
             {{item.name}}
           </li>
         </ul>
     <div class = "container">
       <mat-accordion>
-          <mat-expansion-panel 
-          (opened)="panelOpenState = true"
-          (closed)="panelOpenState = false">
+          <mat-expansion-panel>
           <mat-expansion-panel-header>
               Level 1: Planting the Seed
             </mat-expansion-panel-header>
