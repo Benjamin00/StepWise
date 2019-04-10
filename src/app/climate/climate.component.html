@@ -42,18 +42,13 @@
       </nav>
 
       <h1>Challenges</h1>
-      <ul>
-          <li class="text" *ngFor="let item of items | async">
-            {{item.name}}
-          </li>
-        </ul>
     <div class = "container">
-      <mat-accordion>
+      <mat-accordion class = "text" *ngFor="let names of cnames | async">
           <mat-expansion-panel 
           (opened)="panelOpenState = true"
           (closed)="panelOpenState = false">
-          <mat-expansion-panel-header>
-              Level 1: Planting the Seed
+          <mat-expansion-panel-header >
+                {{names.c1}}
             </mat-expansion-panel-header>
             <label class="container"><b>Calculate your Carbon Footprint</b> - <a href="https://www.carbonfootprint.com/calculator.aspx">See for yourself</a> what your carbon footprint is
               
@@ -102,7 +97,7 @@
         
           <mat-expansion-panel>
             <mat-expansion-panel-header>
-              Level 2: Growing the Sprout
+                {{names.c2}}
             </mat-expansion-panel-header>
             <label class="container"><b>Volunteer Once Monthly</b> - Find your local parks department, or chapter of the Nature Conservancy. See how it feels to be outdoors, and be taking care of your environment.
               <input type="checkbox">
@@ -121,6 +116,24 @@
               <span class="checkmark"></span>
             </label>
             </mat-expansion-panel>
+
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    {{names.c3}}
+                </mat-expansion-panel-header>
+                <label class="container"><b>Visit your Local Park</b> - get in touch with your neighborhood by taking a stroll around your local green space.
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container"><b>Plant a Tree</b> - It's not that hard! Get yourself a sprig, plant it deep, and give it water to grow!
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container"><b>Connect with Green.io</b> - Green.io's platform allows for quick activist outreach and organizing for local communities
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                </mat-expansion-panel>
 
             <mat-expansion-panel>
                 <mat-expansion-panel-header>
