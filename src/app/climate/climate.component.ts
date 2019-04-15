@@ -8,8 +8,12 @@ import { AngularFirestore } from '@angular/fire/firestore';
   styleUrls: ['./climate.component.css']
 })
 export class ClimateComponent implements OnInit {
+  items: Observable<any[]>;
 
-  constructor() { }
+  constructor(db: AngularFirestore) { 
+    this.items = db.collection('test').valueChanges();
+
+  }
 
   ngOnInit() {
   }
